@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductImageCell" customModule="NadaShop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="194" height="175"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="194" height="175"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yX-Xj-66c">
+                        <rect key="frame" x="0.0" y="0.0" width="194" height="175"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test-product-image" translatesAutoresizingMaskIntoConstraints="NO" id="kr7-eA-2em" customClass="StyleUIImageViewProductsListThumbnail" customModule="NadaShop" customModuleProvider="target">
+                                <rect key="frame" x="8" y="8" width="178" height="159"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kr7-eA-2em" firstAttribute="leading" secondItem="8yX-Xj-66c" secondAttribute="leading" constant="8" id="LxR-ma-ewi"/>
+                            <constraint firstAttribute="trailing" secondItem="kr7-eA-2em" secondAttribute="trailing" constant="8" id="St4-b4-tyS"/>
+                            <constraint firstItem="kr7-eA-2em" firstAttribute="top" secondItem="8yX-Xj-66c" secondAttribute="top" constant="8" id="sDn-3R-bQp"/>
+                            <constraint firstAttribute="bottom" secondItem="kr7-eA-2em" secondAttribute="bottom" constant="8" id="vTs-u7-FjI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8yX-Xj-66c" secondAttribute="trailing" id="U5D-aa-jdf"/>
+                <constraint firstItem="8yX-Xj-66c" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="f05-6v-D1R"/>
+                <constraint firstAttribute="bottom" secondItem="8yX-Xj-66c" secondAttribute="bottom" id="jny-kQ-9pA"/>
+                <constraint firstItem="8yX-Xj-66c" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="o2B-Wk-klW"/>
+            </constraints>
+            <size key="customSize" width="194" height="175"/>
+            <connections>
+                <outlet property="image" destination="kr7-eA-2em" id="kWz-1O-a6I"/>
+            </connections>
+            <point key="canvasLocation" x="242.0289855072464" y="82.03125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="test-product-image" width="335" height="185"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

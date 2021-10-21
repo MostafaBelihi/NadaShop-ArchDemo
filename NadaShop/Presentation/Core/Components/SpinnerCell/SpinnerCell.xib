@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SpinnerCell" customModule="NadaShop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="327"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="327"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIU-Yb-Aka" userLabel="Content View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="327"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="V7f-iw-CvJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="327"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="V7f-iw-CvJ" secondAttribute="bottom" id="1DM-vT-s0E"/>
+                            <constraint firstItem="V7f-iw-CvJ" firstAttribute="top" secondItem="cIU-Yb-Aka" secondAttribute="top" id="7lV-N6-n3u"/>
+                            <constraint firstAttribute="trailing" secondItem="V7f-iw-CvJ" secondAttribute="trailing" id="dxC-Qk-KBw"/>
+                            <constraint firstItem="V7f-iw-CvJ" firstAttribute="leading" secondItem="cIU-Yb-Aka" secondAttribute="leading" id="hns-4M-CnS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="cIU-Yb-Aka" secondAttribute="trailing" id="P5p-3Y-Ij4"/>
+                <constraint firstItem="cIU-Yb-Aka" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="epP-vs-Ml4"/>
+                <constraint firstItem="cIU-Yb-Aka" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hAi-SL-J3a"/>
+                <constraint firstAttribute="bottom" secondItem="cIU-Yb-Aka" secondAttribute="bottom" id="hFJ-gw-T4j"/>
+            </constraints>
+            <size key="customSize" width="365" height="299"/>
+            <connections>
+                <outlet property="loadingIndicator" destination="V7f-iw-CvJ" id="lf1-Co-Fyk"/>
+            </connections>
+            <point key="canvasLocation" x="365.21739130434787" y="201.22767857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

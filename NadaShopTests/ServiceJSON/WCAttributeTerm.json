@@ -1,0 +1,20 @@
+{
+	"id": 25,
+	"name": "Dark Red",
+	"slug": "b51700",
+	"description": "",
+	"menu_order": 0,
+	"count": 1,
+	"_links": {
+		"self": [
+			{
+				"href": "https://wp.m-belihi.com/wp-json/wc/v3/products/attributes/1/terms/25"
+			}
+		],
+		"collection": [
+			{
+				"href": "https://wp.m-belihi.com/wp-json/wc/v3/products/attributes/1/terms"
+			}
+		]
+	}
+}

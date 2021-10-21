@@ -1,0 +1,113 @@
+{
+	"id": 17,
+	"name": "Product 1 Name",
+	"slug": "Product-Slug-1",
+	"permalink": "https://wp.m-belihi.com/shop/uncategorized/product-slug/",
+	"date_created": "2021-09-04T18:10:45",
+	"date_created_gmt": "2021-09-04T16:10:45",
+	"date_modified": "2021-09-04T18:10:45",
+	"date_modified_gmt": "2021-09-04T16:10:45",
+	"type": "simple",
+	"status": "publish",
+	"featured": false,
+	"catalog_visibility": "visible",
+	"description": "",
+	"short_description": "",
+	"sku": "",
+	"price": "109.00",
+	"regular_price": "109.00",
+	"sale_price": "",
+	"date_on_sale_from": null,
+	"date_on_sale_from_gmt": null,
+	"date_on_sale_to": null,
+	"date_on_sale_to_gmt": null,
+	"on_sale": false,
+	"purchasable": true,
+	"total_sales": 0,
+	"virtual": false,
+	"downloadable": false,
+	"downloads": [],
+	"download_limit": -1,
+	"download_expiry": -1,
+	"external_url": "",
+	"button_text": "",
+	"tax_status": "taxable",
+	"tax_class": "",
+	"manage_stock": false,
+	"stock_quantity": null,
+	"backorders": "no",
+	"backorders_allowed": false,
+	"backordered": false,
+	"low_stock_amount": null,
+	"sold_individually": false,
+	"weight": "",
+	"dimensions": {
+		"length": "",
+		"width": "",
+		"height": ""
+	},
+	"shipping_required": true,
+	"shipping_taxable": true,
+	"shipping_class": "",
+	"shipping_class_id": 0,
+	"reviews_allowed": true,
+	"average_rating": "0.00",
+	"rating_count": 0,
+	"upsell_ids": [],
+	"cross_sell_ids": [],
+	"parent_id": 0,
+	"purchase_note": "",
+	"categories": [
+		{
+			"id": 15,
+			"name": "Uncategorized",
+			"slug": "uncategorized"
+		}
+	],
+	"tags": [],
+	"images": [
+		{
+			"id": 18,
+			"date_created": "2021-09-04T20:10:30",
+			"date_created_gmt": "2021-09-04T16:10:30",
+			"date_modified": "2021-09-04T20:10:30",
+			"date_modified_gmt": "2021-09-04T16:10:30",
+			"src": "https://wp.m-belihi.com/wp-content/uploads/2021/09/item_XL_132420043_f159e496dca5b.jpg",
+			"name": "item_XL_132420043_f159e496dca5b",
+			"alt": ""
+		}
+	],
+	"attributes": [],
+	"default_attributes": [],
+	"variations": [],
+	"grouped_products": [],
+	"menu_order": 0,
+	"price_html": "<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;</span>109</bdi></span>",
+	"related_ids": [
+		25,
+		28,
+		24,
+		19,
+		29
+	],
+	"meta_data": [
+		{
+			"id": 68,
+			"key": "_last_editor_used_jetpack",
+			"value": "classic-editor"
+		}
+	],
+	"stock_status": "instock",
+	"_links": {
+		"self": [
+			{
+				"href": "https://wp.m-belihi.com/wp-json/wc/v3/products/17"
+			}
+		],
+		"collection": [
+			{
+				"href": "https://wp.m-belihi.com/wp-json/wc/v3/products"
+			}
+		]
+	}
+}

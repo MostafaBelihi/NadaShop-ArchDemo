@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SpecialTextInput">
+            <connections>
+                <outlet property="imgIcon" destination="YEK-8z-kB2" id="lPB-Xm-iVZ"/>
+                <outlet property="txtInput" destination="4LW-c0-B3G" id="X8J-gg-T0Z"/>
+                <outlet property="view" destination="iN0-l3-epB" id="jhl-yi-baz"/>
+                <outlet property="viewContent" destination="xGN-8v-phu" id="aTm-Fk-UiL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xGN-8v-phu" userLabel="ViewContent">
+                    <rect key="frame" x="0.0" y="0.0" width="368" height="56"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4LW-c0-B3G" userLabel="TextField">
+                            <rect key="frame" x="51" y="8" width="309" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YEK-8z-kB2" userLabel="Icon">
+                            <rect key="frame" x="8" y="10" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xGN-8v-phu" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="65w-dp-qNz"/>
+                <constraint firstItem="xGN-8v-phu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="6YG-yE-lMu"/>
+                <constraint firstItem="xGN-8v-phu" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="fKU-t7-BWP"/>
+                <constraint firstItem="xGN-8v-phu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="tex-al-08x"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-84.799999999999997" y="-110.64467766116942"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  NadaShop
+
+  Created by Mostafa AlBelliehy on 25/04/2021.
+  
+*/
+
+/* Main */
+"home" = "Home";
+"search" = "Search";
+"orders" = "Orders";
+"settings" = "Settings";
+"products" = "Products";
+
+"chooseLang" = "Choose Language";
+
+"textInputPlaceHolder" = "Enter text here";
+
+/* Errors */
+"noData" = "No data available.";
+"dataError" = "Error while loading data.";
+"apiError" = "Service error, please try again later!";

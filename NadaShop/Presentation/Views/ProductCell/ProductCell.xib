@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductCell" customModule="NadaShop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="327"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="327"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIU-Yb-Aka" userLabel="Content View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="327"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="PJ7-iv-JTb" userLabel="ProductImage" customClass="StyleUIImageViewProductsListThumbnail" customModule="NadaShop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="228.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PJ7-iv-JTb" secondAttribute="height" multiplier="185:102" id="PI9-rQ-Arv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWS-Yg-25g" userLabel="Title" customClass="StyleUILabelProductsListTitle" customModule="NadaShop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="238.5" width="414" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Subdetails" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prq-28-sDo" userLabel="Details" customClass="StyleUILabelProductsListDetails" customModule="NadaShop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="269" width="414" height="17.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gfe-Yv-Ads" userLabel="Price">
+                                <rect key="frame" x="0.0" y="296.5" width="67" height="20.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalCompressionResistancePriority="751" image="dollar" translatesAutoresizingMaskIntoConstraints="NO" id="7sU-cE-l0y">
+                                        <rect key="frame" x="0.0" y="0.0" width="20.5" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="7sU-cE-l0y" secondAttribute="height" multiplier="1:1" id="ouj-fc-HPG"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" text="$120" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCy-O6-tMt" userLabel="OriginalPrice" customClass="StyleUILabelProductsListPriceDiscount" customModule="NadaShop" customModuleProvider="target">
+                                        <rect key="frame" x="24.5" y="0.0" width="0.0" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" text="$100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMo-fz-99m" userLabel="Price" customClass="StyleUILabelProductsListPrice" customModule="NadaShop" customModuleProvider="target">
+                                        <rect key="frame" x="28.5" y="0.0" width="38.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="prq-28-sDo" firstAttribute="trailing" secondItem="PJ7-iv-JTb" secondAttribute="trailing" id="65f-ea-fvr"/>
+                            <constraint firstItem="FWS-Yg-25g" firstAttribute="top" secondItem="PJ7-iv-JTb" secondAttribute="bottom" constant="10" id="8A0-Oh-gfN"/>
+                            <constraint firstAttribute="trailing" secondItem="FWS-Yg-25g" secondAttribute="trailing" id="AMU-ei-BPO"/>
+                            <constraint firstItem="PJ7-iv-JTb" firstAttribute="width" secondItem="cIU-Yb-Aka" secondAttribute="width" id="B3Z-fi-Mq3"/>
+                            <constraint firstAttribute="bottom" secondItem="gfe-Yv-Ads" secondAttribute="bottom" constant="10" id="Bfh-HY-078"/>
+                            <constraint firstItem="prq-28-sDo" firstAttribute="top" secondItem="FWS-Yg-25g" secondAttribute="bottom" constant="10" id="EDW-Bz-Zdg"/>
+                            <constraint firstItem="gfe-Yv-Ads" firstAttribute="top" secondItem="prq-28-sDo" secondAttribute="bottom" constant="10" id="OAH-ee-oEg"/>
+                            <constraint firstItem="prq-28-sDo" firstAttribute="leading" secondItem="PJ7-iv-JTb" secondAttribute="leading" id="Wch-7e-BLU"/>
+                            <constraint firstItem="gfe-Yv-Ads" firstAttribute="leading" secondItem="cIU-Yb-Aka" secondAttribute="leading" id="bd8-rS-L12"/>
+                            <constraint firstItem="PJ7-iv-JTb" firstAttribute="centerX" secondItem="cIU-Yb-Aka" secondAttribute="centerX" id="eOo-GH-LVv"/>
+                            <constraint firstItem="PJ7-iv-JTb" firstAttribute="top" secondItem="cIU-Yb-Aka" secondAttribute="top" id="iOl-BF-xRz"/>
+                            <constraint firstItem="FWS-Yg-25g" firstAttribute="leading" secondItem="PJ7-iv-JTb" secondAttribute="leading" id="qAD-BW-3xf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="cIU-Yb-Aka" secondAttribute="trailing" id="P5p-3Y-Ij4"/>
+                <constraint firstItem="cIU-Yb-Aka" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="epP-vs-Ml4"/>
+                <constraint firstItem="cIU-Yb-Aka" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hAi-SL-J3a"/>
+                <constraint firstAttribute="bottom" secondItem="cIU-Yb-Aka" secondAttribute="bottom" id="hFJ-gw-T4j"/>
+            </constraints>
+            <size key="customSize" width="365" height="299"/>
+            <connections>
+                <outlet property="imageThumbnail" destination="PJ7-iv-JTb" id="tmG-yJ-oLv"/>
+                <outlet property="lblDetails" destination="prq-28-sDo" id="cxH-Q2-OkR"/>
+                <outlet property="lblOriginalPrice" destination="pCy-O6-tMt" id="RoL-Gh-nzT"/>
+                <outlet property="lblPrice" destination="kMo-fz-99m" id="jzJ-3v-494"/>
+                <outlet property="lblTitle" destination="FWS-Yg-25g" id="8aS-k8-4J2"/>
+            </connections>
+            <point key="canvasLocation" x="365.21739130434787" y="201.22767857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="dollar" width="20" height="20"/>
+        <image name="placeholder" width="400" height="400"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
